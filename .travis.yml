@@ -3,3 +3,4 @@ services:
   - postgresql
 before_script:
   - psql -c 'create database invoicify;' -U postgres
+  - psql -c "CREATE USER YOUR_DB_USER WITH PASSWORD 'YOUR_DB_USER_PASSWORD';" -U postgres
